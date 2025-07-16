@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Meme Generator</title>
+</head>
+<body onload="onInit()">
+    
+
+    <header class="main-header">
+
+        <h2>Meme Generator</h2>
+        <nav>
+            <ul>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="meme-gallery-page">
+        <main>
+            <section class="filter-search-section"></section>
+            <section class="memes-grid-container"></section>
+        </main>
+    </section>
+
+    <section class="meme-editor-page hidden">
+        <main>
+            <canvas class="meme-editor-canvas" width="600" height="450"></canvas>
+            <section class="editor-tools">
+                <input type="text" placeholder="Enter text here" oninput="onTxtInput(this.value)">
+            </section>
+        </main>
+    </section>
+    <section class="meme-saved-page hidden"></section>
+
+    
+
+    <script src="js/main.js"></script>
+    <script src="js/memeController.js"></script>
+    <script src="js/memeService.js"></script>
+    <script src="js/galleryController.js"></script>
+</body>
+</html>
